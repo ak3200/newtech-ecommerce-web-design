@@ -1,0 +1,297 @@
+* {
+  font-family: "roboto";
+  font-size: 14px;
+  color: white;
+}
+
+.signup-main-body {
+  background-image: url("../img/signup-body-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signin-main-body {
+  background-image: url("../img/signin-body-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.admin-main-body {
+  background-image: url("../img/admin-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.admin-main-bg {
+  background-image: linear-gradient(to bottom right, rgb(133, 133, 133), rgb(216, 216, 216));
+  background-repeat: no-repeat;
+}
+
+.main-body {
+  background-image: url("../img/main-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  background-image: url("../img/logo.png");
+  height: 80px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo-color {
+  background-image: url("../img/logo-color.png");
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.signup-img {
+  background-image: url("../img/signup.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+
+.signup-img:hover {
+  transform: scale(95%);
+  transition: 0.5s ease;
+}
+
+.signin-img {
+  background-image: url("../img/signin.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+
+.signin-img:hover {
+  transform: scale(95%);
+  transition: 0.5s ease;
+}
+
+.admin-img {
+  background-image: url("../img/admin.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+
+.admin-img:hover {
+  transform: scale(105%);
+  transition: 0.5s ease;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.black {
+  color: black;
+}
+
+.button-trans:hover {
+  transform: scale(103%);
+  transition: 0.5s ease;
+}
+
+.nav-logo {
+  height: 40px;
+}
+
+.ecom-img {
+  background-image: url("../img/ecom-img.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease;
+}
+
+.ecom-img:hover {
+  transform: scale(95%);
+  transition: 0.5s ease;
+}
+
+.headline {
+  font-size: 80px;
+}
+
+.headline-2 {
+  font-size: 60px;
+  font-family: "yesewa-one";
+}
+
+.foot-font {
+  font-family: "roboto";
+}
+
+.social-media {
+  font-size: 20px;
+}
+
+.social-media:hover {
+  color: rgb(109, 4, 4);
+}
+
+.main-show-products {
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.breadcrumb-size {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.product-name {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.category-tag {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.description {
+  font-size: 25px;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.description-content {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.price-tag{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-tag{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.item-content{
+  font-size: 15px;
+  font-style: italic;
+}
+
+.invoice-logo{
+  height: 30px;
+}
+
+.invoice-tag{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.invoice-price-tag{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1070px) {
+  .headline {
+    font-size: 60px;
+  }
+
+  .headline-2 {
+    font-size: 50px;
+  }
+
+  .product-name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .category-tag {
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .description {
+    font-size: 22px;
+    margin-top: 15px;
+    text-decoration: underline;
+  }
+
+  .description-content {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 860px) {
+  .headline {
+    font-size: 50px;
+  }
+
+  .headline-2 {
+    font-size: 40px;
+  }
+
+  .product-name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .category-tag {
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  .description {
+    font-size: 20px;
+    margin-top: 15px;
+    text-decoration: underline;
+  }
+
+  .description-content {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .price-tag{
+    font-size: 15px;
+  }
+}
+
+@font-face {
+  font-family: "zillaslab";
+  src: url(../fonts/ZillaSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: "yesewa-one";
+  src: url(../fonts/YesevaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}

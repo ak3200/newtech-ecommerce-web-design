@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tech Electronics</title>
+
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="main-body">
+
+    <!--Navbar-->
+    <div>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 0, 0, 0.637);">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="nav-logo" src="assets/img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-grid" style="font-size: 25px;"></i>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 15px;">HOME</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-light" href="#" style="font-size: 15px;">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown p-2" style="font-size: 15px;">
+                            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="listing.html">Computers</a></li>
+                                <li><a class="dropdown-item" href="listing.html">Laptops</a></li>
+                                <li><a class="dropdown-item" href="listing.html">Mobile Phones</a></li>
+                                <li><a class="dropdown-item" href="listing.html">Smart Watches</a></li>
+                                <li><a class="dropdown-item" href="listing.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown p-2" style="font-size: 15px;">
+                            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">User</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="history.html">Purchase History</a></li>
+                                <li><a class="dropdown-item" href="watchlist.html">Watchlist</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bg-danger text-light" href="#">LOGOUT</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-2 align">
+                            <a class="nav-link text-light" href="cart.html"><i class="bi bi-cart3" style="font-size: 20px;"></i></a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <a href="login.html" type="button" class="btn btn-danger"
+                                    style="font-size: 15px; font-weight:bold;">LOGIN</a>
+                                <a href="signup.html" type="button" class="btn btn-outline-light"
+                                    style="font-size: 15px; font-weight:bold;">REGISTER</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar" style="background-color: rgba(0, 0, 0, 0.637);">
+            <form class="container-fluid col-10 col-lg-8">
+                <div class="input-group p-2">
+                    <input type="text" class="form-control" placeholder="Search Here" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text btn btn-secondary" id="basic-addon1"><i class="bi bi-search"></i>
+                        SEARCH</span>
+                    <a href="advanced-serach.html" class="btn text-primary d-none d-lg-block" style="text-decoration: underline;">Advanced
+                        Search</a>
+                </div>
+            </form>
+        </nav>
+    </div>
+    <!--end Navbar-->
+
+    <!--Hero-->
+    <div class="col-12 p-3">
+        <div class="row">
+            <div class="offset-md-1 col-4 d-none d-md-block ecom-img"></div>
+            <div class="offset-1 col-10 col-md-5 text-center text-md-start"
+                style="margin-top: 15%; margin-bottom: 15%;">
+                <div class="row">
+                    <h1 class="headline">Welcome to</h1>
+                    <h1 class="headline-2">NEW TECH ELECTRONICS</h1>
+                    <a href="listing.html" class="btn btn-lg btn-warning button-trans">Browse Products</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end Hero-->
+
+    <!-- Products -->
+    <div class="main-show-products">
+        <div class="offset-1 col-10 text-center">
+            <div class="row g-3 p-5">
+                <div class="btn-group btn-group-lg col-10 offset-1 col-md-8 offset-md-2" role="group"
+                    aria-label="Large button group">
+                    <button type="button" id="newarrivalsbtn" class="btn btn-primary" onclick="newArrivals();">New
+                        Arrivals</button>
+                    <button type="button" id="trendingproductsbtn" class="btn btn-outline-primary"
+                        onclick="trendingProducts();">Trending Products</button>
+                </div>
+
+                <div class="col-12">
+                    <!--New Arriwals-->
+                    <div class="row col-12 justify-content-center" id="newarrivals">
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img1.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end New Arrivals-->
+
+                    <!--Trending Products-->
+                    <div class="row col-12 justify-content-center d-none" id="trendingproducts">
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 20rem; margin:10px;">
+                            <img src="assets/img/listing/img4.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Item Name</h5>
+                                <p class="card-text text-black">Some small description about the item in the card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="invoice.html" class="btn btn-danger p-2 button-trans">Buy Now</a>
+                                <a href="single-product.html" class="btn btn-warning p-2 button-trans">View Item</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end Trending Products-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Products -->
+
+    <!--Carosal-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#"><img src="assets/img/carosal/1.jpg" class="d-block w-100" alt="Carosal IMG 1"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="assets/img/carosal/2.jpg" class="d-block w-100" alt="Carosal IMG 2"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="assets/img/carosal/3.jpg" class="d-block w-100" alt="Carosal IMG 3"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="assets/img/carosal/4.jpg" class="d-block w-100" alt="Carosal IMG 4"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img src="assets/img/carosal/5.jpg" class="d-block w-100" alt="Carosal IMG 5"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--end Carosal-->
+
+    <!-- footer -->
+    <div class="col-12 d-lg-block p-3" style="background-color: rgba(0, 0, 0, 0.753);">
+        <div class="text-center mt-2">
+            <a href="#"><i class="social-media bi bi-facebook p-1"></i></a>
+            <a href="#"><i class="social-media bi bi-instagram p-1"></i></a>
+            <a href="#"><i class="social-media bi bi-twitter p-1"></i></a>
+            <a href="#"><i class="social-media bi bi-youtube p-1"></i></a>
+        </div>
+        <p class="text-center foot-font mt-2">&copy; Copyright 2023 | All Rights Reserved</p>
+    </div>
+    <!-- end footer -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

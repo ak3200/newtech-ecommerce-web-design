@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users | Admin | New Tech Electronics</title>
+
+    <link rel="icon" href="../assets/img/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="admin-main-bg">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="admin.html"><img class="nav-logo" src="../assets/img/logo-color.png"
+                    alt=""></a>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Admin Panel</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="admin.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="manage-products.html">Manage Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="manage-users.html">Manage Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" target="_blank">Website Live View</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li><a class="dropdown-item" href="#">Add a Admin</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bg-danger" href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+
+    <div class="m-3">
+        <div class="container-fluid row justify-content-center">
+            <div class="card m-2 mt-2 col-12 col-md-10 col-lg-8 p-4">
+                <h1 class="heading fs-1">Manage Users</h1>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">Select User</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option class="text-dark">Open this select menu</option>
+                        <option class="text-dark">User 1</option>
+                        <option class="text-dark">User 2</option>
+                        <option class="text-dark">User 3</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">User Name</label>
+                    <input class="form-control" type="text" placeholder="User Name">
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">User Image</label>
+                    <div class="row">
+                        <img class="col-4 col-md-3" src="../assets/img/listing/img1.jpg" alt="">
+                        <div class="col-6">
+                            <a class="btn btn-primary col-12 m-1" href="#">Download Image</a>
+                            <a class="btn btn-warning col-12 m-1" href="#">Change Image</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">User City</label>
+                    <input class="form-control" type="text" placeholder="City Name">
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">Contact Number</label>
+                    <input class="form-control" type="text" placeholder="Contact Number">
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">Email</label>
+                    <input class="form-control" type="text" placeholder="Email">
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">Gender</label>
+                    <select class="form-select">
+                        <option class="text-dark">Open this select menu</option>
+                        <option class="text-dark">Male</option>
+                        <option class="text-dark">Female</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark">NIC Number</label>
+                    <input class="form-control" type="text" placeholder="NIC Number">
+                </div>
+                <div class="col-12 col-md-10 m-1 mt-3">
+                    <label class="text-bold text-dark col-12">Purchase History</label>
+                    <div class="card">
+                        <div class="m-2">
+                            <table class="table table-secondary">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Item Name</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Item 01</td>
+                                        <td>Rs.1 000/=</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Item 02</td>
+                                        <td>Rs.1 000/=</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Item 03</td>
+                                        <td>Rs.1 000/=</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a class="btn btn-sm btn-secondary" href="#">Print Invoices</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-2 text-start">
+                    <a href="#" class="btn btn-info col-12 col-md-3 m-1">Contact User</a>
+                    <a href="#" class="btn btn-success col-12 col-md-3 m-1">Update User</a>
+                    <a href="#" class="btn btn-danger col-12 col-md-3 m-1">Delete User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="col-12 d-lg-block p-2" style="background-color: rgba(0, 0, 0, 0.753);">
+        <p class="text-center foot-font mt-3">&copy; Copyright 2023 | All Rights Reserved</p>
+    </div>
+    <!-- end footer -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

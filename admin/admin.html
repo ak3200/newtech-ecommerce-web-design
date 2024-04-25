@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | New Tech Electronics</title>
+
+    <link rel="icon" href="../assets/img/favicon.png">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="admin-main-bg">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="admin.html"><img class="nav-logo" src="../assets/img/logo-color.png"
+                    alt=""></a>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Admin Panel</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="admin.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="manage-products.html">Manage Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="manage-users.html">Manage Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" target="_blank">Website Live View</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li><a class="dropdown-item" href="#">Add a Admin</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item bg-danger" href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+
+    <div class="m-3">
+        <div class="row justify-content-center">
+            <a href="add-products.html" class="btn btn-lg btn-primary col-12 col-md-5 col-lg-3 m-1"><i class="bi bi-gift fs-4"></i> Add Products</a>
+            <a href="manage-products.html" class="btn btn-lg btn-success col-12 col-md-5 col-lg-3 m-1"><i class="bi bi-archive fs-4"></i> Manage Products</a>
+            <a href="manage-users.html" class="btn btn-lg btn-danger col-12 col-md-5 col-lg-3 m-1"><i class="bi bi-people fs-4"></i> Manage Users</a>
+        </div>
+        <div class="container-fluid row justify-content-center">
+            <div class="card m-2 mt-4 col-12 col-lg-5 p-4">
+                <h1 class="heading fs-1">Sales</h1>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">September</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-success" style="width: 25%">25%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">October</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-primary" style="width: 50%">50%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">November</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">December</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2 mt-4 col-12 col-lg-5 p-4">
+                <h1 class="heading fs-1">Customers</h1>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">September</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-success" style="width: 25%">25%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">October</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-primary" style="width: 50%">50%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">November</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">December</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2 mt-4 col-12 col-lg-5 p-4">
+                <h1 class="heading fs-1">Top Products</h1>
+                <select class="form-select m-1" aria-label="Default select example">
+                    <option selected class="text-dark">Last 7 days</option>
+                    <option class="text-dark">Last Month</option>
+                    <option class="text-dark">Last 3 Months</option>
+                    <option class="text-dark">Last year</option>
+                </select>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">Item Name 01</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-success" style="width: 95%">95%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">Item Name 02</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-primary" style="width: 80%">80%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">Item Name 03</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="m-1 mt-2">
+                    <label class="text-dark">Item Name 04</label>
+                    <div class="progress" role="progressbar" style="height: 30px; background-color:rgba(41, 41, 41, 0.39);">
+                        <div class="progress-bar bg-danger" style="width: 50%">50%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-2 mt-4 col-12 col-lg-10 p-4">
+                <h1 class="heading fs-1">Latest Purchases</h1>
+                <div class="card">
+                    <div class="m-2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Item 01</td>
+                                    <td>User 01</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Item 02</td>
+                                    <td>User 02</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Item 03</td>
+                                    <td>User 03</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a class="btn btn-sm btn-secondary" href="#">Print Invoices</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="col-12 d-lg-block p-2" style="background-color: rgba(0, 0, 0, 0.753);">
+        <p class="text-center foot-font mt-3">&copy; Copyright 2023 | All Rights Reserved</p>
+    </div>
+    <!-- end footer -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
